@@ -18,7 +18,7 @@ export const useCounterStore = defineStore('counter', () => {
     loading.value = true
     error.value = null
     try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/todos') // Replace with your API endpoint
+      const response = await axios.get('https://jsonplaceholder.typicode.com/todos')
       data.value = response.data
     } catch (err) {
       error.value = 'Failed to fetch data'
